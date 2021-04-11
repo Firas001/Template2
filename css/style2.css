@@ -1,0 +1,144 @@
+/* استيراد الخطوط وتعريفها */
+@font-face {
+    font-family: font1;
+    src: url(../fonts/Cairo-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: font2;
+    src: url(../fonts/Khalid\ Art\ Bold.ttf);
+}
+
+/* اعدادات افتراضية لكل العناصر */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    font-family: font1;
+    box-sizing: border-box;
+ 
+}
+
+/* خلفية الصفحة ولون الخط الافتراضي */
+
+body{
+    background-color: #1e1e1e;
+    color: #8f8f8f;
+}
+
+
+.main{
+    position: relative;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #8f8f8f;
+}
+
+.maisrata{
+    float: left;
+    margin:  5px 0 0 15px;
+    z-index: 2;
+}
+
+.nav-link{
+    flex: 1;
+}
+
+.nav-link ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 15px 5px;
+    margin: 0 50px;
+    position: relative;
+    right: 80px;
+}
+
+.nav-link ul li a{
+    text-decoration: none;
+    color: #8f8f8f;
+}
+
+.nav-link ul li::after{
+content: '';
+width: 100%;
+height: 3px;
+background: transparent;
+position: absolute;
+bottom: 0;
+left: 0;
+}
+
+.nav-link ul li:hover:after{
+    background: #fff;
+}
+
+.nav-link ul li a:hover{
+   color: #fff;
+}
+
+.active::after{
+    background: #fff !important;
+}
+
+
+.fas.fa-bars{
+    color: #8f8f8f;
+    position: absolute;
+    right: 3%;
+    margin-top: 1.6%;
+}
+
+
+.galary{
+    margin: 10px 50px;
+}
+
+.galary img{
+    width: 230px;
+    padding: 5px;
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
+.galary img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+.title{
+    margin: 50px 0 50px 0 ;
+}
+
+.hypertext ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 50px;
+    font-size: 30px;
+}
+
+.hypertext{
+    margin-top: 70px;
+}
+.hypertext ul li a{
+    text-decoration: none;
+    color: #8f8f8f;
+}
+
+.hypertext ul li a:hover{
+    color: #fff;
+}
+
+
+.card{
+    display: inline-block;
+
+}
+
+.galary2{
+    margin: 30% 0 5% 0;
+}

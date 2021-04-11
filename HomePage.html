@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="./css/fullpage.min.css">
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+</head>
+<body>
+        <div id="fullpage">
+
+            <!-- start intro -->
+            <div class="section intro">
+               <h4>مرحبا</h4>
+               <span class="typed"></span>
+            </div>
+            <!-- end intro -->
+            
+
+            <!-- start about -->
+            <div class="section about">
+
+                <div class="about-right">
+                    <img src="./images/Personal%20Photos.jpg" alt="about">
+                </div>
+
+                <div class="about-left">
+                    <h4>حول المصمم</h4>
+                    <h2>فراس هشام الدويني</h2>
+                    <h3>طالب في كلية تقنية المعلومات جامعة مصراته</h3>
+                    <p>رقم القيد ########، مقدم ومعد برامج مسموعة، مطور ويب مبتدئ، مصمم سوشيال ميديا، صانع محتوى<br>
+                        قدم هذا المشروع كمشروع نهائي لمادة مقدمة برمجة الانترنت في الفصل الدراسي الثاني<br>
+                        هذا الموقع مجاني ومفتوح المصدر على منصة Git، وهو قابل للتطوير والابتكار<br>
+                        تم تصميم هذا الموقع بلغات HTML وCSS وJS بواسطة "فراس الدويني"<br></p>
+                    <button><a href="#">CV  تحميل </a></button>
+                </div>
+
+            </div>
+            <!-- end about -->
+            
+
+            <!-- start slides -->
+            <div class="section cover">
+                <center>
+                <div class="slide First">
+                    <div class="to-Gallery">
+                    <a href="./html/PhotoGallery.html" class="hypericon"><i class="fas fa-chevron-down"></i></a><br>
+                    <button class="Go-button"><a href="./html/PhotoGallery.html">إلى المعرض</a></button>
+                    </div>
+                </div>
+                <div class="slide Second">
+                    <div class="to-Gallery">
+                        <a href="./html/PhotoGallery.html" class="hypericon"><i class="fas fa-chevron-down"></i></a><br>
+                        <button class="Go-button"><a href="./html/PhotoGallery.html">إلى المعرض</a></button>
+                        </div>
+                 </div>
+                <div class="slide Third">
+                    <div class="to-Gallery">
+                        <a href="./html/PhotoGallery.html" class="hypericon"><i class="fas fa-chevron-down"></i></a><br>
+                        <button class="Go-button"><a href="./html/PhotoGallery.html">إلى المعرض</a></button>
+                        </div>
+                </div>
+                </center>
+            </div>
+            <!-- start slides -->
+
+        </div>
+
+    <!-- start java script -->
+
+    <script src="./js/fullpage.min.js"></script>
+    <script src="./js/typed.min.js"></script>
+    <script>
+        var typed = new Typed('.typed', {
+        strings: ['فراس هشام الدويني', 'طالب في كلية تقنية المعلومات جامعة مصراته', 'مشروع مقدمة برمجة إنترنت'],
+        smartBackspace: true, // Default value
+        typeSpeed: 60,
+        backSpeed: 60,
+        loop: true,
+        });
+
+    </script>
+    <script>
+
+            new fullpage('#fullpage', {
+                //options here
+                autoScrolling:true,
+                scrollHorizontally: true,
+                navigation: true,
+                anchors: ['section1','section2','section3'],
+                navigationTooltips: ['البداية', 'حول المصمم', 'الغلاف'],
+	            showActiveTooltip: true,
+                scrollingSpeed: 1000,
+                controlArrows: true,
+                slidesNavigation: true,
+            });
+
+            /* التحكم في طريقة التنقل */
+            fullpage_api.setAutoScrolling(true);
+    </script>
+
+
+</body>
+</html>
